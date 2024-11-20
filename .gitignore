@@ -1,0 +1,12 @@
+engine-default.js
+node_modules
+lib/**/*.js
+lib/**/*.js.map
+lib/**/*.d.ts
+test/**/*.js
+test/**/*.js.map
+test/**/*.d.ts
+bin/**/*.js
+bin/**/*.js.map
+bin/**/*.d.ts
+componentsjs-error-state.json
