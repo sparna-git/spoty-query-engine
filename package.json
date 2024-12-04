@@ -1,37 +1,28 @@
 {
   "name": "spoty-query-engine",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "lsd:module": true,
-  "dependencies": {
-    "@comunica/query-sparql": "^4.0.2",
-    "@comunica/query-sparql-link-traversal": "0.6.1",
-    "@comunica/config-query-sparql-link-traversal": "0.6.1"
-  },
-  "devDependencies": {
-    "typescript": "^5.6.3"
-  },
-  "scripts": {
-    "build:engine": "comunica-compile-config config/config-default.json > engine-default.js",
-    "build:lib": "tsc",
-    "build": "npm run build:lib && npm run build:engine",
-    "prepare": "npm run build"
-  },
-  "bin": {
-    "spoty-query-engine": "./bin/query.js",
-    "spoty-query-engine-dynamic": "./bin/query-dynamic.js"
-  },
+  "description": "Comunica query engine for Spoty",
   "main": "lib/index.js",
   "types": "lib/index",
   "browser": {
     "./lib/index.js": "./lib/index-browser.js",
     "./lib/index.js.map": "./lib/index-browser.js.map"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:engine": "comunica-compile-config config/config-default.json > engine-default.js",
+    "build:lib": "tsc",
+    "build": "npm run build:lib && npm run build:engine",
+    "prepare": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@comunica/config-query-sparql-link-traversal": "^0.6.1",
+    "@comunica/config-query-sparql-solid": "^4.0.2",
+    "@comunica/query-sparql": "^4.0.2",
+    "@comunica/query-sparql-link-traversal": "^0.6.1",
+    "@comunica/query-sparql-link-traversal-solid": "^0.6.1"
   },
   "files": [
     "components",
@@ -43,5 +34,8 @@
     "lib/**/*.js",
     "lib/**/*.js.map",
     "engine-default.js"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "5.5.4"
+  }
 }
