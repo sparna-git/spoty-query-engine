@@ -113,3 +113,15 @@ This is an attempt to compile a Comunica Query Engine by following the tutorial 
     "typescript": "5.5.4"
   }
 ```
+
+
+## Add as a dependency to the SPoTy project
+
+- See https://medium.com/dailyjs/how-to-use-npm-link-7375b6219557
+- in `spoty-query-engine`, run `sudo npm link`
+- Then in project spoty, link to the local dependency:
+
+```
+cd ../spoty
+npm link spoty-query-engine
+```
