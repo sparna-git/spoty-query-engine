@@ -1,13 +1,9 @@
 const QueryEngine = require('@comunica/query-sparql').QueryEngine;
 
-
+const myEngine = new QueryEngine();
 
 // see https://www.decodingweb.dev/await-is-only-valid-in-async-functions-node
 (async () => {
-	const myEngine = await new QueryEngineFactory().create({
-	    configPath: 'config/config.json', // Relative or absolute path 
-	});
-	
 	const bindingsStream = await myEngine.queryBindings(`
 	  SELECT ?s ?p ?o WHERE {
 	    ?s ?p <http://dbpedia.org/resource/Belgium>.
