@@ -125,3 +125,11 @@ This is an attempt to compile a Comunica Query Engine by following the tutorial 
 cd ../spoty
 npm link spoty-query-engine
 ```
+
+Use the dependency:
+
+```typescript
+  import { QueryEngine } from 'spoty-query-engine';
+
+  const myEngine = new QueryEngine();
+```
