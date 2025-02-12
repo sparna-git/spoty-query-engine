@@ -26,8 +26,8 @@ LIMIT 10`, {
 	  	"https://solid.champin.net/pa/spoty-demo/",
 	  	// uncomment to add static files as sources
 	  	// when uncommented, the query does not work anymore
-	  	// { type: 'file', value: 'https://w3id.org/SpOTy/ontology' },
-        // { type: 'file', value: 'https://w3id.org/SpOTy/languages' }
+	  	{ type: 'file', value: 'https://w3id.org/SpOTy/ontology' },
+        { type: 'file', value: 'https://w3id.org/SpOTy/languages' }
 	  ],
 
 	  fetch: loggingFetch,

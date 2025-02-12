@@ -18,9 +18,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@comunica/config-query-sparql": "^4.1.0",
     "@comunica/config-query-sparql-link-traversal": "^0.6.1",
     "@comunica/config-query-sparql-solid": "^4.0.2",
-    "@comunica/query-sparql": "^4.0.2",
+    "@comunica/query-sparql": "^4.1.0",
     "@comunica/query-sparql-link-traversal": "^0.6.1",
     "@comunica/query-sparql-link-traversal-solid": "^0.6.1"
   },
